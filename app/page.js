@@ -4,7 +4,7 @@ import { FaCloudSun } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <main className="bg-cover bg-blue-500 bg-gradient-to-t from-blue-500 to-blue-300 h-screen">
+    <main className="bg-cover bg-blue-500 bg-gradient-to-r from-blue-500 to-blue-300 h-screen">
       <div className="flex flex-col items-center justify-center h-screen">
         <div className="flex ">
           <h1 className="text-3xl font-bold mt-6 pr-2">Welcome to Weather API app</h1>
