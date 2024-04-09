@@ -1,4 +1,6 @@
-import React from "react";
+"use client"
+
+import React, {useState} from "react";
 import { IoSearchCircleSharp } from "react-icons/io5";
 
 const Input = ({ setLocation, fetchData }) => {

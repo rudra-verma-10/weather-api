@@ -8,7 +8,7 @@ import { FaCloudSun } from "react-icons/fa";
 // require('dotenv').config();
 
 // useEffect(()=> {console.log("key: ", process.env.NEXT_)}, []);
-export default function page() {
+export default function Page() {
   const [location, setLocation] = useState("");
   const [data, setData] = useState({});
 
