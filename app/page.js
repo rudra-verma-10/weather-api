@@ -13,6 +13,7 @@ export default function Page() {
   const [data, setData] = useState({});
 
   const apiKey = process.env.NEXT_PUBLIC_API_KEY;
+  console.log("apiKey: ", apiKey);
 
   const url = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=7&aqi=yes&alerts=yes`;
 
@@ -20,7 +21,9 @@ export default function Page() {
     e.preventDefault();
     try {
       const response = await fetch(url);
+      console.log("response: ", response);
       if (!response.ok) {
+        
         throw new Error("Network response was not ok");
       }
       const data = await response.json();
