@@ -23,7 +23,6 @@ export default function Page() {
       const response = await fetch(url);
       console.log("response: ", response);
       if (!response.ok) {
-        
         throw new Error("Network response was not ok");
       }
       const data = await response.json();
@@ -41,7 +40,7 @@ export default function Page() {
         <div className="p-5 w-1/2">
           <Input fetchData={fetchData} setLocation={setLocation} />
         </div>
-        <div className="flex flex-col  w-1/2">
+        <div className="flex flex-col justify-center">
           <div className="flex ">
             <h1 className="text-3xl font-bold mt-6 pr-2">
               Welcome to Weather API app
@@ -52,8 +51,8 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <div className="flex items-center w-fit">
-        <div className="bg-black/60">
+      <div className="items-center w-full">
+        <div className="">
           {data.location && <Data information={data} />}
         </div>
       </div>

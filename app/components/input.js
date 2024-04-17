@@ -6,9 +6,9 @@ import { IoSearchCircleSharp } from "react-icons/io5";
 const Input = ({ setLocation, fetchData }) => {
   return (
     <div className="">
-      <form onSubmit={fetchData} className="flex ">
+      <form onSubmit={fetchData} className="flex border w-3/4 rounded-xl p-4">
         <input
-          className="h-10 w-1/2  bg-inherit placeholder:text-white border-b-2 outline-none"
+          className="h-10 w-full bg-inherit placeholder:text-white  outline-none"
           type="text"
           placeholder="Enter city"
           onChange={(e) => setLocation(e.target.value)}
